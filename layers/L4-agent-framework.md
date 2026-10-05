@@ -10,9 +10,10 @@
 - Aside 관계: **Aside=완성품 vs Browser Use=만들기 위한 OSS framework**. 연구 관점 직접 비교군.
 
 ### Stagehand (MIT) — 기업 자동화에 중요한 hybrid reference
-- 철학: `act() / observe() / extract()` → 내부적으로 Playwright.
-- `await stagehand.act("click the login button")` 형태. AI+deterministic 혼합, 반복 행동 캐싱/self-healing으로 LLM 재호출 절감.
+- 철학: `act() / observe() / extract()`. AI+deterministic 혼합, 반복 행동 캐싱/self-healing으로 LLM 재호출 절감.
 - 아키텍처 패턴으로 중요: `selector 우선 → 실패시 LLM observe → 새 action 캐시`.
+- **v4 정정**: v4는 Playwright 위가 아니라 **Chrome extension + CDP "understudy" 레이어**(자체 Playwright-like API 재구현). v1–v3만 Playwright fork. `agent()`는 v4에서 제거됨.
+- **정정**: "80% deterministic + 20% AI"는 공식 주장 아님. 실제 주장은 "2x faster, ~80% more token efficient"(self-reported).
 
 ### Skyvern (AGPL-3.0) — AI RPA/workflow
 - Browser Use가 "agent가 브라우저 사용"이면 Skyvern은 **"업무 workflow 자동화"** (로그인→검색→인보이스 추출→PDF→ERP 업로드).

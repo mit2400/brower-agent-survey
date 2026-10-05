@@ -11,7 +11,7 @@
 | L3 | Playwright MCP | ✅ | Apache 계열 | MCP 표준 연동 |
 | L3 | agent-browser | ✅ | Apache-2.0 | 토큰효율 CLI tool |
 | L4 | Browser Use | ✅ | MIT | 대표 agent framework |
-| L4 | Stagehand | ✅ | MIT | hybrid (deterministic+AI) |
+| L4 | Stagehand | ✅ | MIT | hybrid (deterministic+AI), v4는 CDP 네이티브 |
 | L4 | Skyvern | ✅ | AGPL-3.0 | AI RPA/workflow |
 | L4/L5 | Agent TARS | ✅ | Apache-2.0 | browser+computer+MCP |
 | L4 | UI-TARS | ✅ | Apache-2.0 | vision GUI agent |
